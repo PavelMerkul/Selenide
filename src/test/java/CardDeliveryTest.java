@@ -17,7 +17,7 @@ public class CardDeliveryTest {
     @Test
     void shouldCardDeliveryTest() {
         open("http://localhost:9999");
-        $("[data-test-id=city] input").setValue("Махачкала");
+        $("[data-test-id=city] input").setValue("Казань");
         String planingDate = generateDate();
         $("[data-test-id=date] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.DELETE);
         $("[data-test-id=date] input").setValue(planingDate);
